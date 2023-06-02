@@ -1,3 +1,4 @@
+USE netology;
 SELECT
     product_name
 FROM
@@ -5,4 +6,4 @@ FROM
         INNER JOIN
     customers c ON orders.customer_id = c.id
 WHERE
-        name = :name;
+        name = :'name';

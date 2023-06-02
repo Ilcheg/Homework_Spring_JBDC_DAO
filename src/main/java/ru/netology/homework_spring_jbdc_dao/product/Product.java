@@ -10,6 +10,9 @@ public class Product {
         this.productName = productName;
     }
 
+    public Product() {
+    }
+
     public String getProductName() {
         return productName;
     }
