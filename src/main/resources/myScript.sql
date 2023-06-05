@@ -1,9 +1,4 @@
-USE netology;
-SELECT
-    product_name
-FROM
-    netology.orders
-        INNER JOIN
-    customers c ON orders.customer_id = c.id
-WHERE
-        name = :'name';
+select product_name
+from netology.orders
+         join netology.customers c on c.id = orders.customer_id
+where name = :name
